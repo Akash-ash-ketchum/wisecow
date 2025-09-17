@@ -40,6 +40,7 @@ jobs:
     # 6️⃣ Write kubeconfig from GitHub secret
     - name: Setup kubeconfig
       run: |
+        mkdir -p $HOME/.kube
         echo $KUBECONFIG | base64 --decode > $HOME/.kube/config
       env:
         KUBECONFIG: ${{ secrets.KUBECONFIG }}
