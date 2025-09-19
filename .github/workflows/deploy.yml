@@ -10,11 +10,11 @@ jobs:
     runs-on: self-hosted   # 👈 your VM runner
 
     steps:
-    # 1️⃣heckout repo
+    # 1️⃣hCheckout repo
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # 2️⃣ Log in to Docker Hub
+    # 2️⃣ g in to Docker Hub
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
