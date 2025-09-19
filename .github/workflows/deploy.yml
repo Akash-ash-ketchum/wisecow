@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted   # 👈 your VM runner
 
     steps:
-    # 1️⃣ Checkout repo
+    # 1️⃣heckout repo
     - name: Checkout code
       uses: actions/checkout@v3
 
